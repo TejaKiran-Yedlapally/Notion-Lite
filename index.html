@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion-lite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="notion-header flex">
+        <nav class="notion-nav-bar">
+            <span class="logo">Notion-Lite</span>
+            
+            <ul class="nav-links-web">
+            <li class="comment"><i class="fa-solid flex fa-comment link"></i><span class="font">Comment</span></li>
+            <li class="share"><i class="fa-solid flex fa-share link"></i><span class="font">Share</span></li>
+            <li class="favorite"><i class="fa-regular fa-star link"></i><span class="font">Favorite</span></li>
+            </ul>
+
+
+            <button class="menu flex">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <div>
+        <ul class="nav-links-mobile">
+            <li class="comment"><i class="fa-solid flex fa-comment link"></i><span class="font">Comment</span></li>
+            <li class="share"><i class="fa-solid flex fa-share link"></i><span class="font">Share</span></li>
+            <li class="favorite"><i class="fa-regular fa-star link"></i><span class="font">Favorite</span></li>
+        </ul>
+    </div>
+
+    <aside class="side-bar">
+        <div class="sidebar-search nav-div">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-div">
+            <ul class="sidebar-link-div">
+                <li class="siderbar-links"><i class="fa-solid fa-magnifying-glass "></i><span
+                        class="sidebar-font">Search</span></li>
+                <li class="siderbar-links"><i class="fa-regular fa-star "></i><span class="sidebar-font">Update</span>
+                </li>
+                <li class="siderbar-links"><i class="fa-solid fa-gear "></i><span class="sidebar-font">Setting</span>
+                </li>
+                <li class="siderbar-links"><i class="fa-solid fa-box-archive "></i><span
+                        class="sidebar-font">Archive</span></li>
+                <li class="siderbar-links"><i class="fa-solid fa-trash"></i><span class="sidebar-font">Trash</span></li>
+            </ul>
+        </div>
+        <div class="nav-div">
+            <div class="sidebar-link-div2">
+                <div class="private">
+                    <span class="privateicon">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <span>private</span>
+                    </span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <ul class="sections">
+                    <li><i class="fa-solid fa-hand"></i><span>Getting stared</span></li>
+                    <li><i class="fa-solid fa-note-sticky"></i><span>Project Notes</span></li>
+                    <li><i class="fa-solid fa-handshake"></i><span>Meeting Minutes</span></li>
+                    <li><i class="fa-solid fa-bullseye"></i><span>Tasks&Goals</span></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-section">
+           <div class="main-content">
+                <div class="heading">
+                    <span><i class="fa-solid fa-hand"></i></span>
+                    <input type="text" placeholder="Untitled">
+                </div>
+                <textarea  id="content" placeholder="start writing" aria-expanded="false">
+
+                </textarea>
+                <div class="main-buttons">
+                    <button><i class="fa-solid fa-plus"></i>Add a block</button>
+                    <button><i class="fa-solid fa-image"></i>Image</button>
+                    <button><i class="fa-solid fa-file"></i>File</button>
+                </div>
+           </div>
+    </main>
+
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

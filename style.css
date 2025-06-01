@@ -1,0 +1,873 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    display: none;
+}
+.nav-links-web{
+   display: none;  
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.side-bar {
+    width: 300px;
+    height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+    /* Tablets and below */
+    
+    ul,
+    ol {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-links-mobile {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .nav-links-mobile li {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight:600 ;
+        cursor: grabbing;
+        
+    }
+
+    .notion-header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .notion-nav-bar {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .menu {
+        height: 90%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .link {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .font {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .side-bar {
+        --navbarSize: 100px;
+        height: calc(100vh - Var(--navbarSize));
+        width: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .nav-div {
+        width: 90%;
+    }
+
+    .sidebar-search {
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar-search input {
+        --p:5px;
+        width: calc(100% - var(--p));
+        height: calc(100% - var(--p));
+        border-radius: 3px;
+        padding: 5px 5px;
+    }
+
+
+
+    .sidebar-link-div {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .sidebar-link-div li {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        font-size: larger;
+    }
+
+    .siderbar-links i {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar-font {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .sidebar-link-div2 {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .privateicon {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: larger;
+    }
+
+    .private {
+        --p:10px;
+        width: 100% - var(--p);
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .sections{
+       width: 100%;
+       height: 90%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+    .sections li{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        
+    }
+
+      .sections li i {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .sections li span{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+     }
+
+    .main-section{
+        --navsize:140px;
+        height:calc(100vh - var(--navsize)); 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 40px 0;
+    }
+
+    .main-content{
+        height: 80%;
+        width: 80%;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .heading{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heading span,input{
+        height: 100%;
+    }
+
+     .heading span i{
+         height: 80%;
+         width: 80%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 1.5rem;
+     }
+
+    .heading span{
+        width:10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading input{
+          --p:20px;
+          width: calc(70% - var(--p));
+          padding: 0% 20px;
+          border: none;
+          font-size: 2rem;
+    }
+
+    #content
+    {
+        --p:40px;
+        height: 60%;
+        width: calc(100% - var(--p));
+        padding: 20px;
+        resize: none;
+    }
+
+    .main-buttons{
+        height: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:1rem;
+
+    }
+    .main-buttons button{
+        height: 80%;
+        width: 40%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media (max-width: 480px) {
+    /* Mobile */
+
+    ul,
+    ol {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-links-mobile {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .nav-links-mobile li {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 30px;
+        font-weight:600 ;
+        
+    }
+
+    .notion-header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .notion-nav-bar {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .menu {
+        height: 80%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .link {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .font {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .side-bar {
+        --navbarSize: 100px;
+        height: calc(100vh - Var(--navbarSize));
+        width: 200px;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .nav-div {
+        width: 90%;
+    }
+
+    .sidebar-search {
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar-search input {
+        --p:5px;
+        width: calc(100% - var(--p));
+        height: calc(100% - var(--p));
+        border-radius: 3px;
+        padding: 5px 5px;
+    }
+
+
+
+    .sidebar-link-div {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .sidebar-link-div li {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px
+    }
+
+    .siderbar-links i {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar-font {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .sidebar-link-div2 {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .privateicon {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .private {
+        --p:10px;
+        width: 100% - var(--p);
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .sections{
+       width: 100%;
+       height: 90%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+    .sections li{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+      .sections li i {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .sections li span{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .main-section{
+        --navsize:140px;
+        height:calc(100vh - var(--navsize)); 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 40px 0;
+    }
+
+    .main-content{
+        height: 60%;
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .heading{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heading span,input{
+        height: 100%;
+    }
+
+     .heading span i{
+         height: 80%;
+         width: 80%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 1.5rem;
+     }
+
+    .heading span{
+        width:10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading input{
+          --p:20px;
+          width: calc(70% - var(--p));
+          padding: 0% 20px;
+          border: none;
+          font-size: 2rem;
+    }
+
+    #content
+    {
+        --p:40px;
+        height: 60%;
+        width: calc(100% - var(--p));
+        padding: 20px;
+        resize: none;
+    }
+
+    .main-buttons{
+        height: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:1rem;
+
+    }
+    .main-buttons button{
+        height: 80%;
+        width: 40%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media (min-width: 769px) {
+
+    /* Tablets and below */
+
+    ul,
+    ol {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-links-mobile {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .nav-links-mobile li {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight:600 ;
+        cursor: grab;
+        
+    }
+
+    .notion-header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .notion-nav-bar {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+
+    .link {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .font {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .side-bar {
+        --navbarSize: 100px;
+        height: calc(100vh - Var(--navbarSize));
+        width: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .nav-div {
+        width: 90%;
+    }
+
+    .sidebar-search {
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar-search input {
+        --p:5px;
+        width: calc(100% - var(--p));
+        height: calc(100% - var(--p));
+        border-radius: 3px;
+        padding: 5px 5px;
+    }
+
+
+
+    .sidebar-link-div {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .sidebar-link-div li {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px
+    }
+
+    .siderbar-links i {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar-font {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .sidebar-link-div2 {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .privateicon {
+       width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .private {
+        --p:10px;
+        width: 100% - var(--p);
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .sections{
+       width: 100%;
+       height: 90%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+    .sections li{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+      .sections li i {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .sections li span{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .main-section{
+        --navsize:140px;
+        height:calc(100vh - var(--navsize)); 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 40px 0;
+    }
+
+    .main-content{
+        height: 80%;
+        width: 60%;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .heading{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heading span,input{
+        height: 100%;
+    }
+
+     .heading span i{
+         height: 80%;
+         width: 80%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 1.5rem;
+     }
+
+    .heading span{
+        width:10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading input{
+          --p:20px;
+          width: calc(85% - var(--p));
+          padding: 0% 20px;
+          border: none;
+          font-size: 2rem;
+    }
+
+    #content
+    {
+        --p:40px;
+        height: 60%;
+        width: calc(100% - var(--p));
+        padding: 20px;
+        resize: none;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .main-buttons{
+        height: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:1rem;
+
+    }
+    .main-buttons button{
+        height: 80%;
+        width: 20%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links-web{
+        display: flex;
+        width: 27%;
+        height: 70%;
+        justify-content: space-between;
+    }
+
+    .nav-links-web li{
+          display: flex;
+          width: 30%;
+          gap: 1rem;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          
+    }
+
+
+}
+
