@@ -25,6 +25,10 @@
     font-size: 2vw;
 }
 
+.main-content{
+    display: none;
+}
+
 
 
 @media (max-width: 768px) {
@@ -229,7 +233,7 @@
         --navsize:140px;
         height:calc(100vh - var(--navsize)); 
         width: 100%;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: start;
         padding: 40px 0;
@@ -387,7 +391,7 @@
         --navbarSize: 100px;
         height: calc(100vh - Var(--navbarSize));
         width: 200px;
-        display: none;
+        display: flex;
         align-items: center;
         flex-direction: column;
         gap: 2rem;
@@ -508,7 +512,7 @@
         --navsize:140px;
         height:calc(100vh - var(--navsize)); 
         width: 100%;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: start;
         padding: 40px 0;
@@ -779,7 +783,7 @@
         --navsize:140px;
         height:calc(100vh - var(--navsize)); 
         width: 100%;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: start;
         padding: 40px 0;
@@ -859,7 +863,7 @@
 
     .nav-links-web{
         display: flex;
-        width: 40%;
+        width: 45%;
         height: 70%;
         justify-content: end;
         gap: 20px;
@@ -867,7 +871,7 @@
 
     .nav-links-web li{
           display: flex;
-          width: 25%;
+          width: 30%;
           height: 100%;
           justify-content: center;
           align-items: center;    
@@ -879,7 +883,7 @@
     }
     .nav-links-web li span{
         height: 100%;
-        width: 60%;
+        width: 70%;
         display: flex;
         justify-content: center;
         align-items: center;  
